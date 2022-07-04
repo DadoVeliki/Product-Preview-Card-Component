@@ -1,0 +1,119 @@
+/*DESKTOP DESIGN
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+p{
+    line-height: 1.5;
+    font-size: 14px;
+    
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    width:40rem;
+    height: 50vh;
+}
+.levo{
+    background:url('images/image-product-desktop.jpg');
+    background-size: cover;
+    width:50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.desno{
+    width: 50%;
+    background-color: white;
+    padding:5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.iznadNaslova,.para,.cD,button{
+    font-family: 'Montserrat', sans-serif;
+}
+.naslov,.cL{
+    font-family: 'Fraunces', serif;
+}
+.iznadNaslova{
+    letter-spacing: 0.5rem;
+    color: hsl(228, 12%, 48%);
+}
+.iznadNaslova,.para,.cD{
+    color: hsl(228, 12%, 48%);
+}
+.iznadNaslova,.naslov{
+    margin-bottom: 7%;
+}
+.naslov{
+    color:  hsl(212, 21%, 14%);
+}
+.cijene{
+    display: flex;
+    flex-direction: row;
+}
+.cL{
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    margin-right: 10%;
+}
+.cD{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+p,.cijene{
+    margin-bottom: 10%;
+}
+button{
+    width: 100%;
+    height: 45px;
+    background-color: hsl(158, 36%, 37%);
+    border:none;
+    color:white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+button img{
+    margin-right: 4%;
+}
+/*ACTIVE STATES
+*/
+button:hover{
+    background-color: #0F4701;
+    cursor: pointer;
+}
+
+/*MOBILE DESIGN
+*/
+@media screen and (max-width:375px){
+    .container{
+        width:90%;
+        height: 60vh;
+        flex-direction: column;
+    }
+    .levo,.desno{
+        width: 100%;
+        border-radius: 0;
+    }
+    .levo{
+        height: 40%;
+        background: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .desno{
+        height: 60%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
